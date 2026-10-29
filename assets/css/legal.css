@@ -1,0 +1,30 @@
+/* legal pages */
+.root{background:#0E1015;color:#EDE6D6;font-family:'Noto Sans JP',system-ui,sans-serif;font-size:16px;line-height:1.7;min-height:100vh;overflow-x:clip}
+.legal-title{color:#F4EEE1}
+.legal-header{position:sticky;top:0;z-index:30;background:rgba(14,16,21,.92);backdrop-filter:blur(10px);border-bottom:1px solid #1F232C}
+.legal-header-in{height:64px;display:flex;align-items:center;justify-content:space-between;gap:16px}
+.legal-logo{font-family:'Cinzel',serif;display:flex;align-items:center;gap:10px;white-space:nowrap;min-width:0;text-decoration:none;color:#EDE6D6;font-weight:900;font-size:16px;letter-spacing:.06em}
+.legal-logo:hover{color:#EDE6D6}
+.legal-logo img{width:36px;height:36px;border-radius:9px;border:1px solid #3A3F4B}
+.legal-logo .accent{color:#FF7A1A}
+.legal-lang{display:flex;padding:4px;border:1px solid #2E333E;border-radius:999px}
+.legal-main{max-width:820px;padding-top:40px;padding-bottom:80px}
+.legal-back{margin:0 0 28px;font-size:14px}
+.legal-back a{text-decoration:none}
+.legal-title{font-size:clamp(28px,4.4vw,40px);margin-bottom:28px}
+.legal-body{color:#D9D2C3;font-size:15.5px;line-height:1.95;overflow-wrap:anywhere}
+.legal-body h2{font-size:19px;font-weight:700;color:#F4EEE1;margin:44px 0 12px;padding-bottom:10px;border-bottom:1px solid #262B36}
+.legal-body h3{font-size:16px;font-weight:700;color:#FF9A4D;margin:24px 0 6px}
+.legal-body p{margin:0 0 14px}
+.legal-body ul,.legal-body ol{margin:0 0 16px;padding-left:1.4em}
+.legal-body li{margin:4px 0}
+.legal-updated{color:#A9A398;font-size:13.5px}
+.legal-table{width:100%;border-collapse:collapse;border-top:1px solid #262B36}
+.legal-table th,.legal-table td{text-align:left;vertical-align:top;padding:16px 12px;border-bottom:1px solid #262B36}
+.legal-table th{width:32%;color:#F4EEE1;font-weight:700;background:#151922}
+@media (max-width:600px){.legal-table th,.legal-table td{display:block;width:auto}.legal-table th{border-bottom:0;padding-bottom:6px}.legal-table td{padding-top:6px}.legal-logo{font-size:13px;letter-spacing:.03em}.legal-logo img{width:32px;height:32px}}
+.legal-footer{background:#1B1F27;padding:32px 0 48px;color:#BDB6A8;font-size:13px;line-height:1.7}
+.legal-footer p{margin:4px 0}
+.legal-footer-nav{display:flex;flex-wrap:wrap;gap:4px 24px;margin-bottom:16px}
+.legal-footer-nav a{color:#EDE6D6;padding:10px 0}
+.legal-footer-nav a[aria-current]{color:#FF9A4D}

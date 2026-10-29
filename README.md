@@ -11,6 +11,8 @@
 ```
 index.html          日本語ページ
 en/index.html       英語ページ
+privacy/ terms/ tokusho/            プライバシーポリシー・利用規約・特定商取引法に基づく表記（日本語）
+en/privacy/ en/terms/              Privacy Policy・Terms of Service（英語）
 assets/css/style.css
 assets/js/main.js   メニュー、スクリーンショット拡大、iOS判定、言語振り分け
 assets/img/         画像（WebP）、OGP画像、アイコン

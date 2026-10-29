@@ -10,4 +10,27 @@
     <xhtml:link rel="alternate" hreflang="ja" href="https://holdthebulwark.com/"/>
     <xhtml:link rel="alternate" hreflang="en" href="https://holdthebulwark.com/en/"/>
   </url>
+  <url>
+    <loc>https://holdthebulwark.com/privacy/</loc>
+    <xhtml:link rel="alternate" hreflang="ja" href="https://holdthebulwark.com/privacy/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://holdthebulwark.com/en/privacy/"/>
+  </url>
+  <url>
+    <loc>https://holdthebulwark.com/terms/</loc>
+    <xhtml:link rel="alternate" hreflang="ja" href="https://holdthebulwark.com/terms/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://holdthebulwark.com/en/terms/"/>
+  </url>
+  <url>
+    <loc>https://holdthebulwark.com/tokusho/</loc>
+  </url>
+  <url>
+    <loc>https://holdthebulwark.com/en/privacy/</loc>
+    <xhtml:link rel="alternate" hreflang="ja" href="https://holdthebulwark.com/privacy/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://holdthebulwark.com/en/privacy/"/>
+  </url>
+  <url>
+    <loc>https://holdthebulwark.com/en/terms/</loc>
+    <xhtml:link rel="alternate" hreflang="ja" href="https://holdthebulwark.com/terms/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://holdthebulwark.com/en/terms/"/>
+  </url>
 </urlset>
