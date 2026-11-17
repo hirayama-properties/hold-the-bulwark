@@ -1,0 +1,700 @@
+<!doctype html>
+<html lang="ja">
+<head>
+<meta charset="utf-8">
+<title>HOLD THE BULWARK — 公式サイト</title>
+<script src="./support.js"></script>
+</head>
+<body>
+<x-dc>
+<helmet>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@700;900&amp;family=Dela+Gothic+One&amp;family=Noto+Sans+JP:wght@400;500;700;900&amp;display=swap" rel="stylesheet">
+<style>
+body{margin:0;background:#0E1015}
+a{color:#FF9A4D}a:hover{color:#FFC08A}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth}
+.root{-webkit-font-smoothing:antialiased}
+.root :focus-visible{outline:2px solid #FF9A4D;outline-offset:3px}
+.wrap{max-width:1160px;margin:0 auto;padding:0 20px}
+.sec{padding:clamp(72px,9vw,128px) 0;position:relative}
+.disp{font-weight:900;letter-spacing:.01em;line-height:1.15;margin:0}
+.lang-en .disp{font-family:'Cinzel',serif;letter-spacing:.03em}
+.lang-ja .disp{font-family:'Dela Gothic One','Noto Sans JP',sans-serif;font-weight:400}
+.logo{font-family:'Cinzel',serif}
+.eyebrow{font-family:'Cinzel',serif;font-weight:700;font-size:13px;letter-spacing:.28em;color:#FF9A4D;margin:0 0 14px}
+.h2{font-size:clamp(28px,4vw,44px)}
+.lead{color:#BDB6A8;font-size:16px;line-height:1.9;margin:16px 0 0}
+.nav-links{display:flex;gap:28px;align-items:center}
+.nav-links a{color:#D9D2C3;text-decoration:none;font-size:14px;font-weight:500;padding:12px 0}
+.nav-links a:hover{color:#FF9A4D}
+.menu-btn{display:none}
+.lang-btn{min-width:44px;height:36px;border:0;background:transparent;color:#BDB6A8;font:700 12px/1 'Noto Sans JP',sans-serif;letter-spacing:.08em;border-radius:999px;cursor:pointer}
+.lang-btn.on{background:#EDE6D6;color:#14161C}
+.lang-btn{white-space:nowrap}
+@media (max-width:480px){header .logo img{width:34px!important;height:34px!important}header .logo>span>span:first-child{font-size:14px!important;line-height:1.15}header .logo>span>span:last-child{display:none}}
+.btn{display:inline-flex;align-items:center;justify-content:center;gap:8px;min-height:44px;padding:0 20px;border-radius:10px;background:#FF7A1A;color:#1A0E05;font-weight:700;font-size:14px;text-decoration:none;white-space:nowrap}
+.btn:hover{background:#FF9A4D;color:#1A0E05}
+.btn-off,.btn-off:hover{background:#2A2F3A;color:#BDB6A8;border:1px dashed #4A4F5B;cursor:not-allowed}
+.gp-badge{display:inline-flex;flex-direction:column;justify-content:center;align-items:center;width:200px;height:60px;border-radius:9px;background:#000;border:1px solid #A6A6A6;color:#EDE6D6;text-decoration:none;gap:2px}
+.gp-badge:hover{color:#fff;border-color:#EDE6D6}
+.gp-badge small{font-size:10px;color:#A6A6A6;letter-spacing:.06em}
+.badges{display:flex;flex-wrap:wrap;gap:14px;align-items:center}
+.as-badge{position:relative;display:inline-flex;flex-direction:column;justify-content:center;align-items:center;width:200px;height:60px;border-radius:9px;background:#0A0B0E;border:1px dashed #5A5F6A;color:#A9A398;gap:2px;cursor:default}
+.as-badge small{font-size:10px;color:#8E8A80;letter-spacing:.06em}
+.store-btn{display:inline-flex;align-items:center;gap:12px;min-width:212px;height:62px;padding:0 22px 0 16px;border-radius:12px;background:#FF7A1A;color:#1A0E05;text-decoration:none;box-shadow:0 8px 24px rgba(255,122,26,.28);transition:transform .15s,background .15s}
+.store-btn:hover{background:#FF9A4D;color:#1A0E05;transform:translateY(-1px)}
+.store-btn svg{flex:none}
+.store-tx{display:flex;flex-direction:column;line-height:1.15;text-align:left}
+.store-tx small{font-size:11px;font-weight:700;letter-spacing:.04em;opacity:.85}
+.store-tx strong{font-family:'Noto Sans JP',sans-serif;font-size:19px;font-weight:900;letter-spacing:.01em}
+.store-btn.off,.store-btn.off:hover{background:transparent;color:#BDB6A8;border:1px dashed #4A4F5B;box-shadow:none;cursor:default;transform:none}
+.store-btn.off .store-tx strong{font-size:16px}
+@media (prefers-reduced-motion:reduce){.store-btn{transition:none}.store-btn:hover{transform:none}}
+.soon{position:absolute;top:-10px;right:-8px;padding:3px 10px;border-radius:999px;background:#EDE6D6;color:#14161C;font-size:11px;font-weight:700;letter-spacing:.06em;line-height:1.4}
+@media (max-width:860px){.badges{justify-content:center}}
+.ph{display:flex;align-items:center;justify-content:center;flex-direction:column;gap:8px;text-align:center;color:#A9A398;font-size:12px;letter-spacing:.06em;background:repeating-linear-gradient(135deg,rgba(237,230,214,.035) 0 10px,transparent 10px 20px),#161A22;border:1px dashed rgba(237,230,214,.28)}
+.hero-grid{display:grid;grid-template-columns:minmax(0,1.15fr) minmax(0,.85fr);gap:48px;align-items:center}
+.feat-grid{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:20px}
+.step-grid{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:28px}
+.two-col{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:28px}
+.card{background:#151922;border:1px solid #262B36;border-radius:16px}
+.icon-box{width:52px;height:52px;border-radius:12px;display:flex;align-items:center;justify-content:center;background:rgba(255,122,26,.12);color:#FF9A4D;flex:none}
+.row-icon{width:44px;height:44px;border-radius:50%;display:flex;align-items:center;justify-content:center;flex:none}
+.shots{display:flex;gap:16px;overflow-x:auto;scroll-snap-type:x mandatory;padding:4px 20px 20px;scrollbar-color:#3A3F4B transparent}
+.shot{flex:none;width:200px;aspect-ratio:9/20;border-radius:22px;padding:0;border:1px solid #2E333E;background:#161A22;scroll-snap-align:start;cursor:zoom-in;font:inherit;color:inherit;position:relative;overflow:hidden}
+.shot:hover{border-color:#FF9A4D}
+.faq details{border-bottom:1px solid #262B36}
+.faq summary{list-style:none;cursor:pointer;display:flex;justify-content:space-between;align-items:center;gap:16px;padding:22px 4px;font-weight:700;font-size:16px;min-height:44px}
+.faq summary::-webkit-details-marker{display:none}
+.faq .chev{transition:transform .2s;color:#FF9A4D;flex:none}
+.faq details[open] .chev{transform:rotate(45deg)}
+.faq p{margin:0;padding:0 4px 24px;color:#BDB6A8;line-height:1.9;font-size:15px}
+.lv{width:40px;height:40px;border-radius:50%;display:flex;align-items:center;justify-content:center;font:700 12px/1 'Cinzel',serif;border:1px solid #3A3F4B;color:#BDB6A8;background:#151922;flex:none}
+.m-cta{display:none}
+.hero-sub{margin:24px 0 0}
+@media (max-width:860px){.hero-sub{margin:24px auto 0}}
+.hero-bg{background:radial-gradient(ellipse 60% 40% at 50% 100%,rgba(255,122,26,.12),transparent 70%),#0B0E14}
+.hero-visual{display:block;width:100%;height:clamp(300px,48.8vw,720px);object-fit:cover;object-position:center top;-webkit-mask-image:linear-gradient(180deg,#000 62%,transparent 100%);mask-image:linear-gradient(180deg,#000 62%,transparent 100%)}
+.hero-grid{grid-template-columns:minmax(0,1fr);justify-items:center;text-align:center}
+.hero-text{grid-column:auto;max-width:780px;margin-top:clamp(-80px,-4vw,-16px)}
+.hero-text .hero-sub{margin:20px auto 0}
+.hero-text .hero-cta,.hero-text .badges{justify-content:center}
+.step-media{position:relative;width:100%;max-width:240px}
+.step-media .step-img{max-width:none}
+.tap-ring{position:absolute;left:74.6%;top:84.6%;width:18%;height:8.4%;border:3px solid #FF7A1A;border-radius:10px;box-shadow:0 0 0 3px rgba(14,16,21,.55),0 0 18px rgba(255,122,26,.85);animation:tapPulse 1.6s ease-in-out infinite;pointer-events:none}
+.tap-tag{position:absolute;right:3%;top:76.4%;display:inline-flex;align-items:center;gap:3px;padding:3px 9px 3px 7px;border-radius:999px;background:#FF7A1A;color:#1A0E05;font-size:11px;font-weight:900;letter-spacing:.04em;white-space:nowrap;box-shadow:0 4px 12px rgba(0,0,0,.45);animation:tapBob 1.6s ease-in-out infinite;pointer-events:none}
+.drag-ov{position:absolute;inset:0;width:100%;height:100%;pointer-events:none;overflow:visible}
+.drag-path{animation:dragDash 1s linear infinite}
+.drag-hand{animation:dragHand 2.4s ease-in-out infinite}
+.drag-target{animation:tapPulse 1.6s ease-in-out infinite;transform-box:fill-box;transform-origin:center}
+.merge-tag{left:4%;right:auto;top:57.5%;animation:none}
+@keyframes dragDash{to{stroke-dashoffset:-34}}
+@keyframes dragHand{0%{transform:translate(0,0);opacity:0}12%{opacity:1}20%{transform:translate(0,0)}65%{transform:translate(-112px,-92px);opacity:1}82%,100%{transform:translate(-112px,-92px);opacity:0}}
+@media (prefers-reduced-motion:reduce){.drag-path,.drag-hand,.drag-target{animation:none}}
+@keyframes tapPulse{0%,100%{transform:scale(1);opacity:1}50%{transform:scale(1.08);opacity:.75}}
+@keyframes tapBob{0%,100%{transform:translateY(0)}50%{transform:translateY(3px)}}
+@media (prefers-reduced-motion:reduce){.tap-ring,.tap-tag{animation:none}}
+.step-img{width:100%;max-width:240px;aspect-ratio:9/20;object-fit:cover;border-radius:20px;border:1px solid #2E333E;box-shadow:0 20px 50px rgba(0,0,0,.45);display:block}
+.item-img{width:60px;height:60px;border-radius:12px;flex:none;border:1px solid #3A3F4B;display:block}
+.foe-img{width:72px;height:72px;border-radius:14px;object-fit:cover;flex:none;border:1px solid #3A3F4B;display:block;box-shadow:0 8px 20px rgba(0,0,0,.4)}
+.foe-img.boss{border:2px solid #FF7A1A;box-shadow:0 0 22px rgba(255,122,26,.35)}
+.tag{font-size:11px;font-weight:700;letter-spacing:.06em;padding:2px 9px;border-radius:999px;background:rgba(185,195,232,.12);color:#C9D1EE;line-height:1.6}
+.tag.boss{background:rgba(255,122,26,.16);color:#FFB27A}
+@media (max-width:600px){.hero-visual{height:300px}.hero-text{margin-top:-8px}}
+.embers{position:absolute;inset:0;overflow:hidden;pointer-events:none}
+.ember{position:absolute;bottom:-12px;width:4px;height:4px;border-radius:50%;background:#FFC27A;box-shadow:0 0 8px 2px rgba(255,122,26,.65);opacity:0;animation:rise 10s linear infinite}
+.ember:nth-child(even){animation-name:rise2;width:3px;height:3px}
+.ember:nth-child(1){left:4%;animation-delay:-1s;animation-duration:9s}
+.ember:nth-child(2){left:11%;animation-delay:-6s;animation-duration:12s}
+.ember:nth-child(3){left:18%;animation-delay:-3s;animation-duration:10s}
+.ember:nth-child(4){left:25%;animation-delay:-8s;animation-duration:13s}
+.ember:nth-child(5){left:31%;animation-delay:-2s;animation-duration:11s}
+.ember:nth-child(6){left:38%;animation-delay:-9s;animation-duration:9s}
+.ember:nth-child(7){left:45%;animation-delay:-5s;animation-duration:12s}
+.ember:nth-child(8){left:52%;animation-delay:-1.5s;animation-duration:10s}
+.ember:nth-child(9){left:58%;animation-delay:-7s;animation-duration:14s}
+.ember:nth-child(10){left:64%;animation-delay:-4s;animation-duration:9s}
+.ember:nth-child(11){left:70%;animation-delay:-10s;animation-duration:11s}
+.ember:nth-child(12){left:76%;animation-delay:-2.5s;animation-duration:13s}
+.ember:nth-child(13){left:82%;animation-delay:-6.5s;animation-duration:10s}
+.ember:nth-child(14){left:88%;animation-delay:-3.5s;animation-duration:12s}
+.ember:nth-child(15){left:93%;animation-delay:-8.5s;animation-duration:9s}
+.ember:nth-child(16){left:97%;animation-delay:-5.5s;animation-duration:11s}
+@keyframes rise{0%{transform:translate(0,0);opacity:0}12%{opacity:.9}100%{transform:translate(40px,-640px);opacity:0}}
+@keyframes rise2{0%{transform:translate(0,0);opacity:0}12%{opacity:.8}100%{transform:translate(-36px,-560px);opacity:0}}
+@keyframes fadeUp{from{opacity:0;transform:translateY(28px)}to{opacity:1;transform:none}}
+@supports (animation-timeline: view()){@media (prefers-reduced-motion:no-preference){.reveal{animation:fadeUp linear both;animation-timeline:view();animation-range:entry 0% entry 35%}}}
+@media (prefers-reduced-motion:reduce){.ember{display:none}html{scroll-behavior:auto}.faq .chev{transition:none}}
+@media (max-width:1024px){.feat-grid{grid-template-columns:repeat(2,minmax(0,1fr))}}
+@media (max-width:860px){.nav-links{display:none}.menu-btn{display:inline-flex}.hero-grid{grid-template-columns:minmax(0,1fr);text-align:center}.hero-cta{justify-content:center}.hero-phone{order:2}.step-grid{grid-template-columns:minmax(0,1fr)}.two-col{grid-template-columns:minmax(0,1fr)}.ladder-mid{display:none}}
+@media (max-width:600px){.feat-grid{grid-template-columns:minmax(0,1fr)}.hdr-cta{display:none}.m-cta{display:block}.shot{width:168px}}
+</style>
+</helmet>
+
+<div lang="{{lang}}" class="root {{langCls}}" style="background: #0E1015; color: #EDE6D6; font-family: 'Noto Sans JP', system-ui, sans-serif; font-size: 16px; line-height: 1.7; overflow-x: clip; position: relative">
+
+<!-- ============ HEADER ============ -->
+<header style="position: sticky; top: 0; z-index: 30; background: rgba(14,16,21,0.9); backdrop-filter: blur(10px); border-bottom: 1px solid #1F232C">
+<div class="wrap" style="height: 68px; display: flex; align-items: center; justify-content: space-between; gap: 20px">
+<a href="#top" class="logo" style="display: flex; align-items: center; gap: 10px; text-decoration: none; color: #EDE6D6; line-height: 1">
+<img src="/_blob/16368b401b0606ae1f154464a5e75dcf" alt="" width="40" height="40" style="width: 40px; height: 40px; border-radius: 10px; border: 1px solid #3A3F4B; flex: none">
+<span style="display: flex; flex-direction: column">
+<span style="font-weight: 900; font-size: 18px; letter-spacing: 0.06em">HOLD THE <span style="color: #FF7A1A">BULWARK</span></span>
+<span style="font-weight: 700; font-size: 9px; letter-spacing: 0.34em; color: #A9A398; margin-top: 5px">THE UNDEAD LEGION</span>
+</span>
+</a>
+<nav class="nav-links" aria-label="{{t.navLabel}}">
+<a href="#features">{{t.nav1}}</a>
+<a href="#how">{{t.nav2}}</a>
+<a href="#shots">{{t.nav3}}</a>
+<a href="#faq">{{t.nav4}}</a>
+</nav>
+<div style="display: flex; align-items: center; gap: 12px">
+<div role="group" aria-label="Language" style="display: flex; padding: 4px; border: 1px solid #2E333E; border-radius: 999px">
+<button type="button" class="{{jaCls}}" aria-pressed="{{jaPressed}}" onClick="{{setJa}}">日本語</button>
+<button type="button" class="{{enCls}}" aria-pressed="{{enPressed}}" onClick="{{setEn}}">EN</button>
+</div>
+<sc-if value="{{ctaLive}}" hint-placeholder-val="{{ true }}"><a class="btn hdr-cta" href="{{ctaUrl}}" target="_blank" rel="noopener">{{ctaText}}</a></sc-if>
+<sc-if value="{{ctaOff}}" hint-placeholder-val="{{ false }}"><span class="btn btn-off hdr-cta" aria-disabled="true">{{t.iosSoon}}</span></sc-if>
+<button type="button" class="menu-btn" onClick="{{toggleMenu}}" aria-label="{{t.menu}}" aria-expanded="{{menuExpanded}}" style="width: 44px; height: 44px; align-items: center; justify-content: center; background: transparent; border: 1px solid #2E333E; border-radius: 10px; color: #EDE6D6; cursor: pointer">
+<svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" aria-hidden="true"><path d="M4 7h16M4 12h16M4 17h16"></path></svg>
+</button>
+</div>
+</div>
+<sc-if value="{{menuOpen}}" hint-placeholder-val="{{ false }}">
+<nav aria-label="{{t.navLabel}}" style="border-top: 1px solid #1F232C; padding: 8px 20px 20px; display: flex; flex-direction: column">
+<a href="#features" onClick="{{closeMenu}}" style="color: #EDE6D6; text-decoration: none; padding: 14px 0; border-bottom: 1px solid #1F232C; font-weight: 500">{{t.nav1}}</a>
+<a href="#how" onClick="{{closeMenu}}" style="color: #EDE6D6; text-decoration: none; padding: 14px 0; border-bottom: 1px solid #1F232C; font-weight: 500">{{t.nav2}}</a>
+<a href="#shots" onClick="{{closeMenu}}" style="color: #EDE6D6; text-decoration: none; padding: 14px 0; border-bottom: 1px solid #1F232C; font-weight: 500">{{t.nav3}}</a>
+<a href="#faq" onClick="{{closeMenu}}" style="color: #EDE6D6; text-decoration: none; padding: 14px 0; font-weight: 500">{{t.nav4}}</a>
+<sc-if value="{{ctaLive}}" hint-placeholder-val="{{ true }}"><a class="btn" href="{{ctaUrl}}" target="_blank" rel="noopener" style="margin-top: 12px">{{ctaText}}</a></sc-if>
+<sc-if value="{{ctaOff}}" hint-placeholder-val="{{ false }}"><span class="btn btn-off" aria-disabled="true" style="margin-top: 12px">{{t.iosSoon}}</span></sc-if>
+</nav>
+</sc-if>
+</header>
+
+<!-- ============ HERO ============ -->
+<section id="top" class="hero-bg" style="position: relative; overflow: hidden; padding: 0">
+<img class="hero-visual" src="/_blob/06c749a0e43ad929ed1f3b5a593b4b2f" alt="{{t.kvAlt}}" width="1024" height="500" fetchpriority="high">
+<sc-if value="{{showEmbers}}" hint-placeholder-val="{{ true }}">
+<div class="embers" aria-hidden="true">
+<sc-for list="{{emberList}}" as="e" hint-placeholder-count="16"><span class="ember"></span></sc-for>
+</div>
+</sc-if>
+<div class="wrap hero-grid" style="position: relative; z-index: 2; padding-bottom: 48px">
+<div class="hero-text">
+<p class="eyebrow">{{t.heroEyebrow}}</p>
+<h1 class="disp" style="font-size: clamp(36px, 5.4vw, 72px); white-space: pre-line; color: #F4EEE1; text-shadow: 0 2px 30px rgba(255,122,26,0.25)">{{t.heroTitle}}</h1>
+<p class="hero-sub" style="max-width: 520px; font-size: clamp(16px, 1.6vw, 18px); line-height: 1.9; color: #CFC8B9">{{t.heroSub}}</p>
+<div class="hero-cta" style="display: flex; flex-wrap: wrap; align-items: center; gap: 16px 20px; margin-top: 36px">
+<div class="badges">
+<a class="store-btn" href="{{playUrl}}" target="_blank" rel="noopener" aria-label="{{t.cta}}">
+<svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="6" y="2.5" width="12" height="19" rx="2.5"></rect><path d="M12 7v7M9 11l3 3 3-3M10.5 18.5h3"></path></svg>
+<span class="store-tx"><small>{{t.gpSmall}}</small><strong>Google Play</strong></span>
+</a>
+<span class="store-btn off" aria-label="{{t.soonAria}}">
+<svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="6" y="2.5" width="12" height="19" rx="2.5"></rect><circle cx="12" cy="11" r="3.5"></circle><path d="M12 9.3V11l1.2 1M10.5 18.5h3"></path></svg>
+<span class="store-tx"><small>iPhone / iPad</small><strong>{{t.iosSoon}}</strong></span>
+</span>
+</div>
+<span style="font-size: 13px; color: #A9A398">{{t.heroNote}}</span>
+</div>
+</div>
+</div>
+<svg aria-hidden="true" viewBox="0 0 1440 120" preserveAspectRatio="xMidYMax slice" style="display: block; width: 100%; height: 120px; position: relative; z-index: 1">
+<defs>
+<pattern id="merlon" width="72" height="26" patternUnits="userSpaceOnUse"><rect x="0" y="0" width="44" height="26" fill="#1B1F27"></rect></pattern>
+<pattern id="brick" width="56" height="24" patternUnits="userSpaceOnUse"><path d="M0 0.5H56M0 12.5H56M28 0V12M0 12V24" stroke="#262B35" stroke-width="1" fill="none"></path></pattern>
+</defs>
+<rect x="0" y="0" width="1440" height="26" fill="url(#merlon)"></rect>
+<rect x="0" y="26" width="1440" height="94" fill="#1B1F27"></rect>
+<rect x="0" y="26" width="1440" height="94" fill="url(#brick)"></rect>
+<rect x="0" y="26" width="1440" height="2" fill="#FF7A1A" opacity="0.35"></rect>
+</svg>
+</section>
+
+<!-- ============ FEATURES ============ -->
+<section id="features" class="sec" style="background: #0E1015">
+<div class="wrap">
+<div class="reveal" style="text-align: center; max-width: 720px; margin: 0 auto 56px">
+<p class="eyebrow">FEATURES</p>
+<h2 class="disp h2">{{t.featTitle}}</h2>
+</div>
+<div class="feat-grid">
+<article class="card reveal" style="padding: 28px; display: flex; flex-direction: column; gap: 16px">
+<div class="icon-box"><svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M6 3v4a4 4 0 0 0 4 4h4a4 4 0 0 0 4-4V3"></path><path d="M12 11v10"></path><path d="M8.5 17.5L12 21l3.5-3.5"></path></svg></div>
+<h3 style="margin: 0; font-size: 19px; font-weight: 700">{{t.f1t}}</h3>
+<p style="margin: 0; color: #BDB6A8; font-size: 14.5px; line-height: 1.85">{{t.f1d}}</p>
+</article>
+<article class="card reveal" style="padding: 28px; display: flex; flex-direction: column; gap: 16px">
+<div class="icon-box"><svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 3l8 3v6c0 5-3.5 8-8 9-4.5-1-8-4-8-9V6z"></path><path d="M12 8v8M8 12h8"></path></svg></div>
+<h3 style="margin: 0; font-size: 19px; font-weight: 700">{{t.f2t}}</h3>
+<p style="margin: 0; color: #BDB6A8; font-size: 14.5px; line-height: 1.85">{{t.f2d}}</p>
+</article>
+<article class="card reveal" style="padding: 28px; display: flex; flex-direction: column; gap: 16px">
+<div class="icon-box"><svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="11" cy="14" r="7"></circle><path d="M16 9l2.5-2.5"></path><path d="M19.5 3.5v2M21.5 5.5h-2M18.5 2.5l-.5 .5"></path></svg></div>
+<h3 style="margin: 0; font-size: 19px; font-weight: 700">{{t.f3t}}</h3>
+<p style="margin: 0; color: #BDB6A8; font-size: 14.5px; line-height: 1.85">{{t.f3d}}</p>
+</article>
+<article class="card reveal" style="padding: 28px; display: flex; flex-direction: column; gap: 16px">
+<div class="icon-box"><svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M8 4h8v5a4 4 0 0 1-8 0z"></path><path d="M8 6H5a3 3 0 0 0 3.2 4M16 6h3a3 3 0 0 1-3.2 4"></path><path d="M12 13v4M8 21h8M10 17h4v4h-4z"></path></svg></div>
+<h3 style="margin: 0; font-size: 19px; font-weight: 700">{{t.f4t}}</h3>
+<p style="margin: 0; color: #BDB6A8; font-size: 14.5px; line-height: 1.85">{{t.f4d}}</p>
+</article>
+</div>
+</div>
+</section>
+
+<!-- ============ HOW TO PLAY ============ -->
+<section id="how" class="sec" style="background: #111621; border-top: 1px solid #1B1F28; border-bottom: 1px solid #1B1F28">
+<div class="wrap">
+<div class="reveal" style="text-align: center; max-width: 720px; margin: 0 auto 56px">
+<p class="eyebrow">HOW TO PLAY</p>
+<h2 class="disp h2">{{t.howTitle}}</h2>
+</div>
+<div class="step-grid">
+<div class="reveal" style="display: flex; flex-direction: column; align-items: center; text-align: center; gap: 14px">
+<div class="step-media">
+<img class="step-img" src="/_blob/6cca9c343f630e978cf7ee0af44eb13e" alt="{{t.s1alt}}" loading="lazy">
+<span class="tap-ring" aria-hidden="true"></span>
+<span class="tap-tag" aria-hidden="true"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 5v14M6 13l6 6 6-6"></path></svg>{{t.tapTag}}</span>
+</div>
+<span class="logo" style="font-weight: 900; font-size: 15px; letter-spacing: 0.2em; color: #FF9A4D; margin-top: 6px">STEP 01</span>
+<h3 style="margin: 0; font-size: 21px; font-weight: 700">{{t.s1t}}</h3>
+<p style="margin: 0; color: #BDB6A8; font-size: 14.5px; line-height: 1.85; max-width: 320px">{{t.s1d}}</p>
+</div>
+<div class="reveal" style="display: flex; flex-direction: column; align-items: center; text-align: center; gap: 14px">
+<div class="step-media">
+<img class="step-img" src="/_blob/19af075a8164460c0fe803d424830bbc" alt="{{t.s2alt}}" loading="lazy">
+<svg class="drag-ov" viewBox="0 0 900 2000" preserveAspectRatio="none" aria-hidden="true">
+<defs><marker id="drag-ah" viewBox="0 0 10 10" refX="5" refY="5" markerWidth="3.2" markerHeight="3.2" orient="auto-start-reverse"><path d="M0 0L10 5L0 10z" fill="#FF7A1A"></path></marker></defs>
+<ellipse class="drag-target" cx="177" cy="1323" rx="88" ry="44" fill="none" stroke="#FF7A1A" stroke-width="7"></ellipse>
+<path d="M340 1392 Q 300 1270 222 1290" fill="none" stroke="rgba(14,16,21,0.55)" stroke-width="18" stroke-linecap="round"></path>
+<path class="drag-path" d="M340 1392 Q 300 1270 222 1290" fill="none" stroke="#FF7A1A" stroke-width="10" stroke-linecap="round" stroke-dasharray="20 14" marker-end="url(#drag-ah)"></path>
+<g class="drag-hand"><g transform="translate(316 1392) scale(4)"><path d="M6 1.5a2 2 0 0 1 2 2V10h.6V8.8a1.8 1.8 0 0 1 3.6 0V10h.5V9.6a1.8 1.8 0 0 1 3.6 0V11h.4v-.2a1.8 1.8 0 0 1 3.6 0v5.2a7 7 0 0 1-7 7h-1.6a7 7 0 0 1-5.3-2.4L1.3 15.8a1.9 1.9 0 0 1 2.8-2.5L4 13.2V3.5a2 2 0 0 1 2-2z" fill="#ffffff" stroke="#14161C" stroke-width="1.2" stroke-linejoin="round"></path></g></g>
+</svg>
+<span class="tap-tag merge-tag" aria-hidden="true">{{t.mergeTag}}</span>
+</div>
+<span class="logo" style="font-weight: 900; font-size: 15px; letter-spacing: 0.2em; color: #FF9A4D; margin-top: 6px">STEP 02</span>
+<h3 style="margin: 0; font-size: 21px; font-weight: 700">{{t.s2t}}</h3>
+<p style="margin: 0; color: #BDB6A8; font-size: 14.5px; line-height: 1.85; max-width: 320px">{{t.s2d}}</p>
+</div>
+<div class="reveal" style="display: flex; flex-direction: column; align-items: center; text-align: center; gap: 14px">
+<img class="step-img" src="/_blob/ae1b5d49c90ff9e91cedb24f080ff5e4" alt="{{t.s3t}}" loading="lazy">
+<span class="logo" style="font-weight: 900; font-size: 15px; letter-spacing: 0.2em; color: #FF9A4D; margin-top: 6px">STEP 03</span>
+<h3 style="margin: 0; font-size: 21px; font-weight: 700">{{t.s3t}}</h3>
+<p style="margin: 0; color: #BDB6A8; font-size: 14.5px; line-height: 1.85; max-width: 320px">{{t.s3d}}</p>
+</div>
+</div>
+
+<div class="card reveal" style="margin-top: 64px; padding: 28px clamp(20px, 4vw, 40px); display: flex; flex-direction: column; align-items: center; gap: 20px">
+<p style="margin: 0; font-weight: 700; font-size: 16px">{{t.ladderTitle}}</p>
+<div style="display: flex; align-items: center; justify-content: center; gap: 10px; flex-wrap: nowrap; width: 100%">
+<div style="display: flex; flex-direction: column; align-items: center; gap: 6px">
+<div class="lv" style="width: 56px; height: 56px; border-color: #FF9A4D; color: #FF9A4D"><svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 20L19 5"></path><path d="M13 5h6v6"></path><path d="M4 20l1.5-4.5M4 20l4.5-1.5"></path></svg></div>
+<span style="font-size: 12px; color: #BDB6A8">Lv.1 {{t.lv1}}</span>
+</div>
+<div class="ladder-mid" style="display: flex; gap: 8px; align-items: center">
+<div class="lv">2</div><div class="lv">3</div><div class="lv">4</div><div class="lv">5</div><div class="lv">6</div><div class="lv">7</div><div class="lv">8</div><div class="lv">9</div>
+</div>
+<svg width="28" height="16" viewBox="0 0 28 16" fill="none" stroke="#FF9A4D" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M2 8h22M18 3l6 5-6 5"></path></svg>
+<div style="display: flex; flex-direction: column; align-items: center; gap: 6px">
+<div class="lv" style="width: 64px; height: 64px; background: #FF7A1A; border-color: #FF7A1A; color: #1A0E05; box-shadow: 0 0 24px rgba(255,122,26,0.45)"><svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M3 18c4-.5 6.5-3.5 7.5-9 1.8 3 5 4 10.5 3-3 2-5 4.8-6 8-3-1.8-7-2.2-12-2z"></path><path d="M10.5 9L9 4"></path></svg></div>
+<span style="font-size: 12px; color: #EDE6D6; font-weight: 700">Lv.10 {{t.lv10}}</span>
+</div>
+</div>
+</div>
+</div>
+</section>
+
+<!-- ============ SCREENSHOTS ============ -->
+
+
+<!-- ============ ITEMS & ENEMIES ============ -->
+<section id="shots" class="sec" style="background: #0E1015">
+<div class="wrap reveal" style="display: flex; flex-wrap: wrap; justify-content: space-between; align-items: flex-end; gap: 16px; margin-bottom: 36px">
+<div>
+<p class="eyebrow">SCREENSHOTS</p>
+<h2 class="disp h2">{{t.shotsTitle}}</h2>
+</div>
+<p style="margin: 0; color: #A9A398; font-size: 13px">{{t.shotHint}}</p>
+</div>
+<div style="max-width: 1200px; margin: 0 auto">
+<div class="shots" role="list">
+<sc-for list="{{shots}}" as="s" hint-placeholder-count="6">
+<button type="button" role="listitem" class="shot" onClick="{{s.open}}" aria-label="{{s.aria}}">
+<img src="{{s.src}}" alt="{{s.alt}}" loading="lazy" style="width: 100%; height: 100%; object-fit: cover; display: block">
+<span style="position: absolute; right: 10px; bottom: 10px; width: 36px; height: 36px; border-radius: 50%; background: rgba(14,16,21,0.82); color: #EDE6D6; display: flex; align-items: center; justify-content: center"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" aria-hidden="true"><circle cx="11" cy="11" r="6"></circle><path d="M20 20l-4.5-4.5M11 8.5v5M8.5 11h5"></path></svg></span>
+</button>
+</sc-for>
+</div>
+</div>
+<sc-if value="{{zoomOpen}}" hint-placeholder-val="{{ false }}">
+<div role="dialog" aria-modal="true" aria-label="{{zoomLabel}}" style="position: fixed; inset: 0; z-index: 60; background: rgba(6,7,10,0.9); display: flex; align-items: center; justify-content: center; gap: 16px; padding: 20px">
+<button type="button" onClick="{{zoomPrev}}" aria-label="{{t.prev}}" style="width: 48px; height: 48px; border-radius: 50%; border: 1px solid #3A3F4B; background: #151922; color: #EDE6D6; cursor: pointer; flex: none; display: flex; align-items: center; justify-content: center"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M15 5l-7 7 7 7"></path></svg></button>
+<img src="{{zoomSrc}}" alt="{{zoomAlt}}" style="height: min(80vh, 760px); aspect-ratio: 9 / 20; max-width: 66vw; object-fit: contain; border-radius: 24px; border: 1px solid #3A3F4B; background: #0E1015">
+<button type="button" onClick="{{zoomNext}}" aria-label="{{t.next}}" style="width: 48px; height: 48px; border-radius: 50%; border: 1px solid #3A3F4B; background: #151922; color: #EDE6D6; cursor: pointer; flex: none; display: flex; align-items: center; justify-content: center"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M9 5l7 7-7 7"></path></svg></button>
+<button type="button" onClick="{{zoomClose}}" aria-label="{{t.close}}" style="position: absolute; top: 16px; right: 16px; width: 48px; height: 48px; border-radius: 50%; border: 1px solid #3A3F4B; background: #151922; color: #EDE6D6; cursor: pointer; display: flex; align-items: center; justify-content: center"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" aria-hidden="true"><path d="M6 6l12 12M18 6L6 18"></path></svg></button>
+</div>
+</sc-if>
+</section>
+
+<!-- ============ RANKING ============ -->
+<section class="sec" style="background: #111621; border-top: 1px solid #1B1F28; border-bottom: 1px solid #1B1F28">
+<div class="wrap">
+<div class="reveal" style="text-align: center; max-width: 720px; margin: 0 auto 56px">
+<p class="eyebrow">ARSENAL &amp; LEGION</p>
+<h2 class="disp h2">{{t.arsTitle}}</h2>
+</div>
+<div class="two-col">
+<div class="card reveal" style="padding: clamp(24px, 3vw, 36px)">
+<h3 style="margin: 0 0 6px; font-size: 18px; font-weight: 700; color: #FF9A4D">{{t.itemsHead}}</h3>
+<p style="margin: 0 0 20px; font-size: 13px; color: #A9A398">{{t.itemsNote}}</p>
+<div style="display: flex; flex-direction: column; gap: 18px">
+<div style="display: flex; gap: 16px; align-items: center"><img class="item-img" src="/_blob/c6de04a8578658fab3697fcffc735168" alt="" width="60" height="60"><div><p style="margin: 0; font-weight: 700">{{t.i1t}}</p><p style="margin: 0; font-size: 14px; color: #BDB6A8">{{t.i1d}}</p></div></div>
+<div style="display: flex; gap: 16px; align-items: center"><img class="item-img" src="/_blob/4b557c12f919673cabff0394ad303a45" alt="" width="60" height="60"><div><p style="margin: 0; font-weight: 700">{{t.i2t}}</p><p style="margin: 0; font-size: 14px; color: #BDB6A8">{{t.i2d}}</p></div></div>
+<div style="display: flex; gap: 16px; align-items: center"><img class="item-img" src="/_blob/0962bdc3a168a05f4430bbd64a9e956c" alt="" width="60" height="60"><div><p style="margin: 0; font-weight: 700">{{t.i3t}}</p><p style="margin: 0; font-size: 14px; color: #BDB6A8">{{t.i3d}}</p></div></div>
+</div>
+<div style="height: 1px; background: #262B36; margin: 26px 0"></div>
+<h3 style="margin: 0 0 16px; font-size: 18px; font-weight: 700; color: #8FD3C0">{{t.potHead}}</h3>
+<div style="display: flex; gap: 16px; align-items: center"><div style="display: flex; gap: 8px; flex: none"><img class="item-img" src="/_blob/b808d4958de84509f21128a95213e477" alt="" width="60" height="60"><img class="item-img" src="/_blob/ee0c4391cae6d9ea5af0a5dc25ac560a" alt="" width="60" height="60"></div><div><p style="margin: 0; font-weight: 700">{{t.potItems}}</p><p style="margin: 0; font-size: 14px; color: #BDB6A8">{{t.potNote}}</p></div></div>
+</div>
+<div style="display: flex; flex-direction: column; gap: 28px">
+<div class="card reveal" style="padding: clamp(24px, 3vw, 36px)">
+<h3 style="margin: 0 0 20px; font-size: 18px; font-weight: 700; color: #B9C3E8">{{t.enemyHead}}</h3>
+<div style="display: flex; flex-direction: column; gap: 18px">
+<div style="display: flex; gap: 16px; align-items: center"><img class="foe-img" src="/_blob/0c85567450aeed5c3b7550bac9d9ee64" alt="" width="72" height="72" loading="lazy"><div><p style="margin: 0; display: flex; flex-wrap: wrap; align-items: center; gap: 4px 8px"><span style="font-weight: 700">{{t.e1t}}</span><span class="tag">{{t.e1k}}</span></p><p style="margin: 2px 0 0; font-size: 14px; color: #BDB6A8">{{t.e1d}}</p></div></div>
+<div style="display: flex; gap: 16px; align-items: center"><img class="foe-img" src="/_blob/8bbc84861dd5b038a460e7b58f8deaf2" alt="" width="72" height="72" loading="lazy"><div><p style="margin: 0; display: flex; flex-wrap: wrap; align-items: center; gap: 4px 8px"><span style="font-weight: 700">{{t.e2t}}</span><span class="tag">{{t.e2k}}</span></p><p style="margin: 2px 0 0; font-size: 14px; color: #BDB6A8">{{t.e2d}}</p></div></div>
+<div style="display: flex; gap: 16px; align-items: center"><img class="foe-img" src="/_blob/3fde7dcdfcc0f976018cb225d643d6eb" alt="" width="72" height="72" loading="lazy"><div><p style="margin: 0; display: flex; flex-wrap: wrap; align-items: center; gap: 4px 8px"><span style="font-weight: 700">{{t.e3t}}</span><span class="tag">{{t.e3k}}</span></p><p style="margin: 2px 0 0; font-size: 14px; color: #BDB6A8">{{t.e3d}}</p></div></div>
+<div style="display: flex; gap: 16px; align-items: center"><img class="foe-img boss" src="/_blob/6e8b60a8bc104a9f4231d0e3cba58dca" alt="" width="72" height="72" loading="lazy"><div><p style="margin: 0; display: flex; flex-wrap: wrap; align-items: center; gap: 4px 8px"><span style="font-weight: 700; color: #FFD2AE">{{t.e4t}}</span><span class="tag boss">{{t.e4k}}</span></p><p style="margin: 2px 0 0; font-size: 14px; color: #BDB6A8">{{t.e4d}}</p></div></div>
+</div>
+</div>
+<div class="card reveal" style="padding: clamp(24px, 3vw, 32px); display: flex; gap: 16px; align-items: flex-start">
+<div class="icon-box"><svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="3"></circle><path d="M19.4 15a1.65 1.65 0 0 0 .33 1.82l.06.06a2 2 0 0 1-2.83 2.83l-.06-.06a1.65 1.65 0 0 0-1.82-.33 1.65 1.65 0 0 0-1 1.51V21a2 2 0 0 1-4 0v-.09A1.65 1.65 0 0 0 9 19.4a1.65 1.65 0 0 0-1.82.33l-.06.06a2 2 0 0 1-2.83-2.83l.06-.06A1.65 1.65 0 0 0 4.68 15a1.65 1.65 0 0 0-1.51-1H3a2 2 0 0 1 0-4h.09A1.65 1.65 0 0 0 4.6 9a1.65 1.65 0 0 0-.33-1.82l-.06-.06a2 2 0 0 1 2.83-2.83l.06.06A1.65 1.65 0 0 0 9 4.68a1.65 1.65 0 0 0 1-1.51V3a2 2 0 0 1 4 0v.09a1.65 1.65 0 0 0 1 1.51 1.65 1.65 0 0 0 1.82-.33l.06-.06a2 2 0 0 1 2.83 2.83l-.06.06A1.65 1.65 0 0 0 19.4 9a1.65 1.65 0 0 0 1.51 1H21a2 2 0 0 1 0 4h-.09a1.65 1.65 0 0 0-1.51 1z"></path></svg></div>
+<div><p style="margin: 0; font-weight: 700; font-size: 17px">{{t.tacT}}</p><p style="margin: 6px 0 0; font-size: 14px; color: #BDB6A8; line-height: 1.85">{{t.tacD}}</p></div>
+</div>
+</div>
+</div>
+</div>
+</section><section class="sec" style="background: radial-gradient(ellipse 50% 60% at 75% 50%, rgba(255,122,26,0.1), transparent 70%), #0E1015">
+<div class="wrap two-col" style="align-items: center; gap: 56px">
+<div class="reveal">
+<p class="eyebrow">GLOBAL RANKING</p>
+<h2 class="disp h2">{{t.rankTitle}}</h2>
+<p class="lead">{{t.rankBody}}</p>
+<div style="display: flex; flex-direction: column; gap: 12px; margin-top: 28px">
+<div style="display: flex; gap: 12px; align-items: center; font-size: 15px"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#FF9A4D" stroke-width="1.8" stroke-linecap="round" aria-hidden="true"><circle cx="12" cy="12" r="9"></circle><path d="M3 12h18M12 3c3 3 3 15 0 18M12 3c-3 3-3 15 0 18"></path></svg>{{t.rb1}}</div>
+<div style="display: flex; gap: 12px; align-items: center; font-size: 15px"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#FF9A4D" stroke-width="1.8" stroke-linecap="round" aria-hidden="true"><circle cx="18" cy="5" r="2.5"></circle><circle cx="6" cy="12" r="2.5"></circle><circle cx="18" cy="19" r="2.5"></circle><path d="M8.2 10.8l7.6-4.4M8.2 13.2l7.6 4.4"></path></svg>{{t.rb2}}</div>
+<div style="display: flex; gap: 12px; align-items: center; font-size: 15px"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#FF9A4D" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 5h9M8.5 3v2M6 5c1 4 4 7 7 8M11 5c-1 4-4 7-7 8"></path><path d="M13 21l4-9 4 9M14.5 18h5"></path></svg>{{t.rb3}}</div>
+</div>
+</div>
+<div class="reveal" style="display: flex; flex-direction: column; align-items: center; gap: 12px">
+<div style="width: 100%; max-width: 360px; border-radius: 20px; padding: 28px; background: #151922; border: 1px solid #FF7A1A; box-shadow: 0 0 50px rgba(255,122,26,0.15)">
+<div style="display: flex; justify-content: space-between; align-items: center">
+<span class="logo" style="font-weight: 900; font-size: 22px; letter-spacing: 0.12em; color: #FF9A4D">RESULT</span>
+<span class="logo" style="font-size: 10px; letter-spacing: 0.2em; color: #A9A398; font-weight: 700">HOLD THE BULWARK</span>
+</div>
+<div style="height: 1px; background: #262B36; margin: 18px 0"></div>
+<div style="display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 16px">
+<div><p style="margin: 0; font-size: 11px; letter-spacing: 0.16em; color: #A9A398">STAGE</p><p class="logo" style="margin: 2px 0 0; font-size: 26px; font-weight: 900">— —</p></div>
+<div><p style="margin: 0; font-size: 11px; letter-spacing: 0.16em; color: #A9A398">KILLS</p><p class="logo" style="margin: 2px 0 0; font-size: 26px; font-weight: 900">— — —</p></div>
+<div style="grid-column: span 2"><p style="margin: 0; font-size: 11px; letter-spacing: 0.16em; color: #A9A398">WORLD RANK</p><p class="logo" style="margin: 2px 0 0; font-size: 26px; font-weight: 900; color: #FF9A4D"># — — —</p></div>
+</div>
+</div>
+<p style="margin: 0; font-size: 12px; color: #A9A398">{{t.cardNote}}</p>
+</div>
+</div>
+</section>
+
+<!-- ============ FAQ ============ -->
+<section id="faq" class="sec" style="background: #111621; border-top: 1px solid #1B1F28">
+<div class="wrap" style="max-width: 860px">
+<div class="reveal" style="text-align: center; margin-bottom: 40px">
+<p class="eyebrow">FAQ</p>
+<h2 class="disp h2">{{t.faqTitle}}</h2>
+</div>
+<div class="faq reveal" style="border-top: 1px solid #262B36">
+<details><summary>{{t.q1}}<svg class="chev" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" aria-hidden="true"><path d="M12 5v14M5 12h14"></path></svg></summary><p>{{t.a1}}</p></details>
+<details><summary>{{t.q2}}<svg class="chev" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" aria-hidden="true"><path d="M12 5v14M5 12h14"></path></svg></summary><p>{{t.a2}}</p></details>
+<details><summary>{{t.q3}}<svg class="chev" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" aria-hidden="true"><path d="M12 5v14M5 12h14"></path></svg></summary><p>{{t.a3}}</p></details>
+<details><summary>{{t.q4}}<svg class="chev" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" aria-hidden="true"><path d="M12 5v14M5 12h14"></path></svg></summary><p>{{t.a4}}</p></details>
+<details><summary>{{t.q5}}<svg class="chev" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" aria-hidden="true"><path d="M12 5v14M5 12h14"></path></svg></summary><p>{{t.a5}}</p></details>
+<details><summary>{{t.q6}}<svg class="chev" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" aria-hidden="true"><path d="M12 5v14M5 12h14"></path></svg></summary><p>{{t.a6}}</p></details>
+</div>
+</div>
+</section>
+
+<!-- ============ FINAL CTA ============ -->
+<section style="position: relative; overflow: hidden; padding: clamp(88px, 11vw, 150px) 0 0; text-align: center; background: radial-gradient(ellipse 55% 60% at 50% 70%, rgba(255,122,26,0.2), transparent 70%), #0B0E14">
+<sc-if value="{{showEmbers}}" hint-placeholder-val="{{ true }}">
+<div class="embers" aria-hidden="true">
+<sc-for list="{{emberList}}" as="e" hint-placeholder-count="16"><span class="ember"></span></sc-for>
+</div>
+</sc-if>
+<div class="wrap reveal" style="position: relative; z-index: 2; padding-bottom: 72px">
+<img src="/_blob/16368b401b0606ae1f154464a5e75dcf" alt="HOLD THE BULWARK" width="112" height="112" loading="lazy" style="width: 112px; height: 112px; border-radius: 26px; border: 1px solid #3A3F4B; box-shadow: 0 16px 40px rgba(0,0,0,0.5), 0 0 40px rgba(255,122,26,0.25); margin: 0 auto 28px; display: block">
+<h2 class="disp" style="font-size: clamp(34px, 5.6vw, 68px); color: #F4EEE1; text-shadow: 0 2px 30px rgba(255,122,26,0.3)">{{t.finalTitle}}</h2>
+<p style="margin: 18px 0 0; font-size: clamp(17px, 2vw, 22px); color: #FF9A4D; font-weight: 700">{{t.finalSub}}</p>
+<div class="badges" style="margin-top: 40px; justify-content: center">
+<a class="store-btn" href="{{playUrl}}" target="_blank" rel="noopener" aria-label="{{t.cta}}">
+<svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="6" y="2.5" width="12" height="19" rx="2.5"></rect><path d="M12 7v7M9 11l3 3 3-3M10.5 18.5h3"></path></svg>
+<span class="store-tx"><small>{{t.gpSmall}}</small><strong>Google Play</strong></span>
+</a>
+<span class="store-btn off" aria-label="{{t.soonAria}}">
+<svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="6" y="2.5" width="12" height="19" rx="2.5"></rect><circle cx="12" cy="11" r="3.5"></circle><path d="M12 9.3V11l1.2 1M10.5 18.5h3"></path></svg>
+<span class="store-tx"><small>iPhone / iPad</small><strong>{{t.iosSoon}}</strong></span>
+</span>
+</div>
+<p style="margin: 16px 0 0; font-size: 13px; color: #A9A398">{{t.heroNote}}</p>
+</div>
+<svg aria-hidden="true" viewBox="0 0 1440 90" preserveAspectRatio="xMidYMax slice" style="display: block; width: 100%; height: 90px; position: relative; z-index: 1">
+<rect x="0" y="0" width="1440" height="22" fill="url(#merlon)"></rect>
+<rect x="0" y="22" width="1440" height="68" fill="#1B1F27"></rect>
+<rect x="0" y="22" width="1440" height="68" fill="url(#brick)"></rect>
+</svg>
+</section>
+
+<!-- ============ FOOTER ============ -->
+<footer style="background: #1B1F27; padding: 8px 0 48px; color: #BDB6A8; font-size: 13px">
+<div class="wrap" style="display: flex; flex-direction: column; gap: 20px">
+<div style="display: flex; flex-wrap: wrap; justify-content: space-between; align-items: center; gap: 20px">
+<span class="logo" style="font-weight: 900; font-size: 16px; letter-spacing: 0.06em; color: #EDE6D6">HOLD THE <span style="color: #FF7A1A">BULWARK</span></span>
+<nav aria-label="Footer" style="display: flex; flex-wrap: wrap; gap: 8px 24px">
+<a href="{{privacyUrl}}" target="_blank" rel="noopener" style="color: #EDE6D6; padding: 10px 0">{{t.privacy}}</a>
+<a href="{{termsUrl}}" target="_blank" rel="noopener" style="color: #EDE6D6; padding: 10px 0">{{t.terms}}</a>
+<a href="{{tokushoUrl}}" target="_blank" rel="noopener" style="color: #EDE6D6; padding: 10px 0">{{t.tokusho}}</a>
+<a href="{{contactUrl}}" target="_blank" rel="noopener" style="color: #EDE6D6; padding: 10px 0">{{t.contact}}</a>
+</nav>
+</div>
+<div style="height: 1px; background: #2A2F3A"></div>
+<div style="display: flex; flex-direction: column; gap: 6px; line-height: 1.7">
+<span>{{t.operator}}：{{t.operatorPh}}</span>
+<span>{{t.tm}}</span>
+<span>© 2026 Hirayama Properties K.K.</span>
+</div>
+</div>
+</footer>
+
+<!-- Mobile sticky CTA (≤600px) -->
+<div class="m-cta" style="position: sticky; bottom: 0; z-index: 25; padding: 10px 16px calc(10px + env(safe-area-inset-bottom)); background: rgba(14,16,21,0.94); border-top: 1px solid #262B36">
+<sc-if value="{{ctaLive}}" hint-placeholder-val="{{ true }}"><a class="btn" href="{{ctaUrl}}" target="_blank" rel="noopener" style="width: 100%; min-height: 50px; font-size: 15px">{{ctaText}}</a></sc-if>
+<sc-if value="{{ctaOff}}" hint-placeholder-val="{{ false }}"><span class="btn btn-off" aria-disabled="true" style="width: 100%; min-height: 50px; font-size: 15px">{{t.iosSoon}}</span></sc-if>
+</div>
+
+</div>
+</x-dc>
+<script type="text/x-dc" data-dc-script data-props='{"startLang":{"editor":"enum","options":["auto","ja","en"],"default":"auto","section":"Language"},"embers":{"editor":"boolean","default":true,"section":"Motion"},"previewDevice":{"editor":"enum","options":["auto","android","ios"],"default":"auto","section":"Preview"},"$preview":{"width":1440,"height":6200}}'>
+class Component extends DCLogic {
+  state = { lang: null, menuOpen: false, zoom: 0 };
+
+  detectLang() {
+    try {
+      return (navigator.language || '').toLowerCase().indexOf('ja') === 0 ? 'ja' : 'en';
+    } catch (e) {
+      return 'ja';
+    }
+  }
+
+  texts() {
+    return {
+      ja: {
+        navLabel: 'メインナビゲーション', nav1: '特徴', nav2: '遊び方', nav3: 'スクリーンショット', nav4: 'FAQ',
+        cta: 'Google Playで入手', menu: 'メニュー', close: '閉じる', prev: '前の画像', next: '次の画像', enlarge: 'スクリーンショットを拡大',
+        heroEyebrow: 'マージ × ライン防衛アクション',
+        heroTitle: '防壁を、守り抜け。',
+        kvAlt: 'HOLD THE BULWARK: The Undead Legion — 防壁を守る兵士たちと、迫りくるアンデッド軍団',
+        heroSub: '味方をマージして強化。迫りくるアンデッド軍団から、全30ステージ、防衛ラインを守り抜こう。',
+        heroNote: '基本プレイ無料 ・ iOS版は準備中',
+        heroPh: 'キービジュアル／プレイ画面', badgePh: '［Google Play 公式バッジ画像］',
+        asBadgePh: '［App Store 公式バッジ画像］', soon: '準備中', ctaIos: 'App Storeで入手', iosSoon: 'iOS版は準備中', gpSmall: '無料ダウンロード', soonAria: 'App Store版は準備中です',
+        featTitle: '防衛線を支える、4つの柱',
+        f1t: 'マージで、パワーアップ', f1d: '同じレベルの味方を重ねて合体。矢から、レベル10のドラゴンまで。',
+        f2t: '全30ステージの防衛戦', f2d: '敵は、ステージごとに増え、強くなる。素早い敵、頑丈な敵、強力なボスが、君の防衛ラインを狙う。',
+        f3t: '戦況をひっくり返す、特別なアイテム', f3d: '広範囲爆弾、強力爆弾、貫通弾。使いどころが、勝負を分ける。',
+        f4t: '世界ランキングに挑戦', f4d: '撃破数を、世界中のプレイヤーと競おう。',
+        howTitle: '遊び方は、3ステップ。', mediaPh: 'GIF・動画・スクリーンショット',
+        s1alt: '画面右下の召喚ボタン（騎士のかぶと）をタップして味方を呼ぶ画面', tapTag: '召喚ボタン',
+        s1t: 'タップで、召喚', s1d: '召喚ボタンをタップして、味方を防衛ラインに呼び出そう。',
+        s2alt: '下段のレベル3の味方を、上段のレベル3の味方にドラッグして合体させる画面', mergeTag: '同じレベル同士を重ねて合体',
+        s2t: '重ねて、合体', s2d: '同じレベルの味方に重ねてドラッグすると、合体してレベルアップ。全10レベル。',
+        s3t: '防衛ラインを、守り抜く', s3d: '味方は自動で攻撃する。置く場所とタイミングを考えて、軍団を迎え撃て。',
+        ladderTitle: '合体を重ねて、矢からドラゴンへ', lv1: '矢', lv10: 'ドラゴン',
+        shotsTitle: '戦場の様子', shotHint: '横にスワイプ ・ タップで拡大',
+        shotAlts: ['タイトル画面', 'レベル10のドラゴンが、炎で敵をなぎ払う', '爆弾で、敵の群れを吹き飛ばす', 'ステージ10の防衛戦', '合体で育った味方が並ぶ防衛ライン', 'ステージ開始前の会話シーン', 'ショップ画面', '戦い方の設定画面'],
+        arsTitle: '戦いを左右する、アイテムと敵',
+        itemsHead: '特別なアイテム', itemsNote: '敵を倒すと、無料で手に入る。',
+        i1t: '広範囲爆弾', i1d: '画面全体の敵を、まとめて攻撃。',
+        i2t: '強力爆弾', i2d: '狭い範囲に、大ダメージ。',
+        i3t: '貫通弾', i3d: 'レーンを、まっすぐ貫く。',
+        potHead: 'ポーション', potItems: 'HP回復 ／ 最大HPアップ', potNote: '重要ステージのクリア後、報酬を「アイテム」か「HP」から選べる。',
+        enemyHead: 'アンデッド軍団',
+        e1t: '屍の歩兵', e1k: '歩兵', e1d: '数で押し寄せる、軍団の主力。倒しても、倒しても、やってくる。',
+        e2t: '疾風の騎兵', e2k: '素早い騎兵', e2d: '隣を突いて、一気に防壁へ駆け込む。決して見逃すな。',
+        e3t: '巨人兵', e3k: '巨人兵', e3d: '巨大な棍棒を担ぐ怪力。生半可な攻撃では、止まらない。',
+        e4t: '死霊の騎士団長', e4k: 'ボス騎兵', e4d: '重装の騎士が、軍団を率いて戦場に君臨する。全力で迎え撃て。',
+        tacT: '戦い方を、自分好みに', tacD: '味方がボスを狙う割合や、アイテムの攻撃対象を、設定で調整できる。',
+        rankTitle: '世界中のプレイヤーと、撃破数を競おう。',
+        rankBody: '世界共通ランキングに、君の撃破数を刻もう。リザルトカードを友だちに共有して、防衛の記録を見せつけよう。',
+        rb1: '世界共通ランキング（撃破数）', rb2: 'リザルトカードを、友だちにシェア', rb3: '日本語 ・ English 対応',
+        cardNote: '※イメージ。実際のリザルトカード画像に差し替え',
+        faqTitle: 'よくある質問',
+        q1: '無料で遊べますか？', a1: 'はい、基本プレイ無料です。任意の広告視聴でボーナスを受け取れるほか、任意のアプリ内課金があります。',
+        q2: 'iPhoneでも遊べますか？', a2: '現在は Android（Google Play）版を配信しています。iOS版は準備中です。',
+        q3: 'オフラインでも遊べますか？', a3: 'はい、オフラインでも遊べます。ただし、世界ランキング・広告・アプリ内課金の利用には、インターネット接続が必要です。',
+        q4: '課金しないとクリアできませんか？', a4: '特別なアイテムは、敵を倒すと無料で手に入ります。広告の視聴やアプリ内課金は、すべて任意です。',
+        q5: 'データの引き継ぎはできますか？', a5: '申し訳ありませんが、現在、データの引き継ぎには対応していません。',
+        q6: '不具合はどこに連絡すればいいですか？', a6: 'ページ下部の「お問い合わせ」フォームからご連絡ください。端末名・OSのバージョン・発生した状況を添えていただけると、調査がスムーズです。',
+        finalTitle: '準備はいいか、指揮官！', finalSub: '防壁は、君にかかっている！',
+        privacy: 'プライバシーポリシー', terms: '利用規約', tokusho: '特定商取引法に基づく表記', contact: 'お問い合わせ', mailPh: '【連絡先メールアドレス】',
+        operator: '運営', operatorPh: 'Hirayama Properties K.K.（平山プロパティーズ株式会社）',
+        tm: 'Google Play および Google Play ロゴは Google LLC の商標です。App Store は Apple Inc. のサービスマークです。'
+      },
+      en: {
+        navLabel: 'Main navigation', nav1: 'Features', nav2: 'How to Play', nav3: 'Screenshots', nav4: 'FAQ',
+        cta: 'Get it on Google Play', menu: 'Menu', close: 'Close', prev: 'Previous image', next: 'Next image', enlarge: 'Enlarge screenshot',
+        heroEyebrow: 'Merge × Lane Defense Action',
+        heroTitle: 'HOLD THE BULWARK.',
+        kvAlt: 'HOLD THE BULWARK: The Undead Legion — defenders of the wall face the undead legion',
+        heroSub: 'Merge your allies, hold the line, and crush the undead legion across 30 stages.',
+        heroNote: 'Free to play · iOS coming soon',
+        heroPh: 'Key visual / Gameplay', badgePh: '[Official Google Play badge image]',
+        asBadgePh: '[Official App Store badge image]', soon: 'Coming soon', ctaIos: 'Download on the App Store', iosSoon: 'iOS coming soon', gpSmall: 'Free on', soonAria: 'App Store version coming soon',
+        featTitle: 'Four Pillars of the Bulwark',
+        f1t: 'Merge to Power Up', f1d: 'Drag matching allies together to level them up—from simple arrows to a level 10 dragon.',
+        f2t: 'Hold the Line for 30 Stages', f2d: 'Every stage brings more and tougher enemies. Runners, tanks, and mighty bosses will try to break through.',
+        f3t: 'Turn the Tide with Special Items', f3d: 'Wide Bomb, Power Bomb, Piercing Shot. Timing is everything.',
+        f4t: 'Climb the Global Ranking', f4d: 'Compete for the highest kill count with players around the world.',
+        howTitle: 'How to Play', mediaPh: 'GIF / Video / Screenshot',
+        s1alt: 'Tapping the summon button (the knight helmet, bottom right) to call allies', tapTag: 'Summon',
+        s1t: 'Tap to Summon', s1d: 'Tap the screen to call allies onto your defense line.',
+        s2alt: 'Dragging a level 3 ally onto another level 3 ally to merge them', mergeTag: 'Drop on the same level',
+        s2t: 'Drag to Merge', s2d: 'Drop an ally onto another of the same level to merge and level up—10 levels in all.',
+        s3t: 'Hold the Line', s3d: 'Allies attack on their own. Choose where and when to place them, and meet the legion head-on.',
+        ladderTitle: 'Merge your way from Arrow to Dragon', lv1: 'Arrow', lv10: 'Dragon',
+        shotsTitle: 'A Look at the Battlefield', shotHint: 'Swipe to browse · Tap to enlarge',
+        shotAlts: ['Title screen', 'A level 10 dragon scorches the legion', 'A bomb blasts a pack of enemies', 'Defending Stage 10', 'A defense line of merged allies', 'Pre-stage dialogue', 'Shop screen', 'Battle settings screen'],
+        arsTitle: 'Your Arsenal & the Legion',
+        itemsHead: 'Special Items', itemsNote: 'Earned free by defeating enemies.',
+        i1t: 'Wide Bomb', i1d: 'Hits every enemy on screen.',
+        i2t: 'Power Bomb', i2d: 'Massive damage in a tight radius.',
+        i3t: 'Piercing Shot', i3d: 'Tears straight through a whole lane.',
+        potHead: 'Potions', potItems: 'Heal HP / Max HP Up', potNote: 'After key stages, choose your reward: items or HP.',
+        enemyHead: 'The Undead Legion',
+        e1t: 'Ghoul Footman', e1k: 'Infantry', e1d: 'The legion\'s relentless rank and file. Cut them down, and more keep coming.',
+        e2t: 'Bone Rider', e2k: 'Fast Cavalry', e2d: 'Strikes through any gap and races for the wall. Don\'t let it slip past.',
+        e3t: 'Brute Giant', e3k: 'Giant', e3d: 'Swings a massive club and shrugs off weak hits.',
+        e4t: 'Death Knight', e4k: 'Boss Cavalry', e4d: 'An armored warlord who leads the charge. Meet it with everything you have.',
+        tacT: 'Tune Your Tactics', tacD: 'Set how often allies target bosses, and what your items aim at.',
+        rankTitle: 'Compete with Players Worldwide',
+        rankBody: 'Post your kill count to the global leaderboard, then share your result card with friends.',
+        rb1: 'Global ranking by kill count', rb2: 'Share your result card', rb3: 'Japanese & English',
+        cardNote: 'Mockup — replace with an actual result card',
+        faqTitle: 'FAQ',
+        q1: 'Is it free to play?', a1: 'Yes. The game is free to play. You can optionally watch ads for bonuses, and optional in-app purchases are available.',
+        q2: 'Can I play on iPhone?', a2: 'The game is currently available on Android (Google Play). An iOS version is in preparation.',
+        q3: 'Can I play offline?', a3: 'Yes, you can play offline. The global ranking, ads, and in-app purchases require an internet connection.',
+        q4: 'Do I need to pay to clear the game?', a4: 'Special items drop for free when you defeat enemies. Watching ads and in-app purchases are entirely optional.',
+        q5: 'Can I transfer my save data?', a5: 'Sorry, transferring save data is not currently supported.',
+        q6: 'Where do I report a bug?', a6: 'Please use the Contact form linked at the bottom of this page. Including your device model, OS version, and what happened helps us investigate.',
+        finalTitle: 'Ready, Commander?', finalSub: 'The bulwark is counting on you!',
+        privacy: 'Privacy Policy', terms: 'Terms of Service', tokusho: 'Specified Commercial Transactions Act (Japanese)', contact: 'Contact', mailPh: '[Contact email]',
+        operator: 'Operated by', operatorPh: 'Hirayama Properties K.K.',
+        tm: 'Google Play and the Google Play logo are trademarks of Google LLC. App Store is a service mark of Apple Inc.'
+      }
+    };
+  }
+
+  renderVals() {
+    // ▼ Links in ONE place — swap before launch
+    var PLAY_URL = 'https://play.google.com/store/apps/details?id=com.hirayamaproperties.holdthebulwark';
+    var APP_STORE_URL = '';                 // ← iOS公開後にApp StoreのURLを入れるだけで切り替わる
+    var LEGAL = {
+      ja: {
+        privacy: 'https://holdthebulwark.com/privacy/',
+        terms: 'https://holdthebulwark.com/terms/',
+        tokusho: 'https://holdthebulwark.com/tokusho/'
+      },
+      en: {
+        privacy: 'https://holdthebulwark.com/en/privacy/',
+        terms: 'https://holdthebulwark.com/en/terms/',
+        tokusho: 'https://holdthebulwark.com/tokusho/'  // 英語版なし → 日本語版
+      }
+    };
+    var CONTACT_URL = 'https://forms.gle/QtNSUzpAxisWaQEp6';   // お問い合わせフォーム
+
+    var start = this.props.startLang ?? 'auto';
+    var lang = this.state.lang || (start === 'auto' ? this.detectLang() : start);
+    var t = this.texts()[lang];
+    var PRIVACY_URL = LEGAL[lang].privacy;
+    var TERMS_URL = LEGAL[lang].terms;
+    var TOKUSHO_URL = LEGAL[lang].tokusho;
+    var dev = this.props.previewDevice ?? 'auto';
+    var isIOS = dev === 'ios';
+    if (dev === 'auto') {
+      try {
+        var ua = navigator.userAgent || '';
+        isIOS = /iPhone|iPad|iPod/.test(ua) || (navigator.platform === 'MacIntel' && navigator.maxTouchPoints > 1);
+      } catch (e) { isIOS = false; }
+    }
+    var ctaLive = !isIOS || !!APP_STORE_URL;
+    var zoom = this.state.zoom;
+    var SHOTS = [
+      '/_blob/5168dce26d2aaee5884790f339b566ab', '/_blob/4d467249047238c6edd0ef7de1f37f68',
+      '/_blob/ae1b5d49c90ff9e91cedb24f080ff5e4', '/_blob/36de4244cb9e7155203c8daf32393398',
+      '/_blob/19af075a8164460c0fe803d424830bbc', '/_blob/8d7723770b0710bb3f691aa58ce39c6f',
+      '/_blob/0ad8ed20304eb4b2882251406314b76b', '/_blob/edb391c0a81c72c3195ed4af873655e9'
+    ];
+    var count = SHOTS.length;
+    var pad = function (n) { return (n < 10 ? '0' : '') + n; };
+
+    var shots = [];
+    for (var i = 1; i <= count; i++) {
+      (function (n, self) {
+        shots.push({ num: pad(n), src: SHOTS[n - 1], alt: t.shotAlts[n - 1], aria: t.enlarge + ' ' + n, open: function () { self.setState({ zoom: n }); } });
+      })(i, this);
+    }
+    var emberList = [];
+    for (var k = 0; k < 16; k++) emberList.push({ k: k });
+
+    return {
+      t: t,
+      lang: lang,
+      langCls: 'lang-' + lang,
+      jaCls: 'lang-btn' + (lang === 'ja' ? ' on' : ''),
+      enCls: 'lang-btn' + (lang === 'en' ? ' on' : ''),
+      jaPressed: String(lang === 'ja'),
+      enPressed: String(lang === 'en'),
+      setJa: () => this.setState({ lang: 'ja' }),
+      setEn: () => this.setState({ lang: 'en' }),
+      playUrl: PLAY_URL,
+      ctaLive: ctaLive,
+      ctaOff: !ctaLive,
+      ctaUrl: isIOS ? APP_STORE_URL : PLAY_URL,
+      ctaText: isIOS ? t.ctaIos : t.cta,
+      privacyUrl: PRIVACY_URL,
+      termsUrl: TERMS_URL,
+      tokushoUrl: TOKUSHO_URL,
+      contactUrl: CONTACT_URL,
+      menuOpen: this.state.menuOpen,
+      menuExpanded: String(this.state.menuOpen),
+      toggleMenu: () => this.setState({ menuOpen: !this.state.menuOpen }),
+      closeMenu: () => this.setState({ menuOpen: false }),
+      showEmbers: this.props.embers ?? true,
+      emberList: emberList,
+      shots: shots,
+      zoomOpen: zoom > 0,
+      zoomNum: pad(zoom || 1),
+      zoomSrc: SHOTS[(zoom || 1) - 1],
+      zoomAlt: t.shotAlts[(zoom || 1) - 1],
+      zoomLabel: 'SCREENSHOT ' + pad(zoom || 1),
+      zoomPrev: () => this.setState({ zoom: zoom <= 1 ? count : zoom - 1 }),
+      zoomNext: () => this.setState({ zoom: zoom >= count ? 1 : zoom + 1 }),
+      zoomClose: () => this.setState({ zoom: 0 })
+    };
+  }
+}
+</script>
+</body>
+</html>

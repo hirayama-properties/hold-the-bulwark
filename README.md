@@ -6,6 +6,11 @@
 - 日本語：`/` 、英語：`/en/`。初回訪問時はブラウザの言語設定で振り分け、手動切替も可能。
 - トラッキング・クッキーなし（言語の手動選択だけ `sessionStorage` に保存）。
 
+## 編集のしかた
+
+`design/Main.dc.html`（トップページ）と `tools/legal/*.md`（規約類）を直して `tools/build.sh` を実行 → コミット・プッシュ。
+詳しくは [CLAUDE.md](CLAUDE.md)。
+
 ## 構成
 
 ```
@@ -17,6 +22,8 @@ assets/css/style.css
 assets/js/main.js   メニュー、スクリーンショット拡大、iOS判定、言語振り分け
 assets/img/         画像（WebP）、OGP画像、アイコン
 favicon.ico
+design/Main.dc.html  トップページの元データ（日英の文言・構成・スタイル）
+tools/              ビルドスクリプトと規約類の原稿（tools/legal/*.md）
 ```
 
 ## 公開前・公開後に差し替える箇所
