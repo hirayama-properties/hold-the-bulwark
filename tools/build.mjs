@@ -122,8 +122,11 @@ function build(lang) {
     ? 'マージ×ライン防衛アクション「HOLD THE BULWARK: The Undead Legion」公式サイト。味方を合体させて強化し、迫りくるアンデッド軍団から全30ステージ、防衛ラインを守り抜こう。基本プレイ無料。'
     : 'Official site of HOLD THE BULWARK: The Undead Legion, a merge × lane defense game. Merge your allies, hold the line, and crush the undead legion across 30 stages. Free to play.';
   const title = lang === 'ja'
-    ? 'HOLD THE BULWARK: The Undead Legion｜公式サイト'
-    : 'HOLD THE BULWARK: The Undead Legion | Official Site';
+    ? 'HOLD THE BULWARK: The Undead Legion｜マージ×防衛の無料スマホゲーム【公式サイト】'
+    : 'HOLD THE BULWARK: The Undead Legion | Free Merge & Defense Mobile Game';
+  const ogAlt = lang === 'ja'
+    ? 'HOLD THE BULWARK: The Undead Legion のキービジュアル。防壁を守る兵士たちと、迫りくるアンデッド軍団'
+    : 'Key art of HOLD THE BULWARK: The Undead Legion, showing soldiers defending the bulwark against the undead legion';
   const ld = {
     '@context': 'https://schema.org',
     '@type': ['VideoGame', 'MobileApplication'],
@@ -138,7 +141,9 @@ function build(lang) {
     inLanguage: ['ja', 'en'],
     installUrl: PLAY_URL,
     offers: { '@type': 'Offer', price: '0', priceCurrency: 'JPY' },
-    publisher: { '@type': 'Organization', name: 'Hirayama Properties K.K.' },
+    publisher: { '@type': 'Organization', name: 'Hirayama Properties K.K.', url: SITE_URL },
+    screenshot: ['shot-s07.webp', 'shot-s06.webp', 'shot-s12.webp', 'shot-shop.webp'].map((f) => SITE_URL + 'assets/img/' + f),
+    isAccessibleForFree: true,
   };
 
   return `<!doctype html>
@@ -161,12 +166,14 @@ function build(lang) {
 <meta property="og:image" content="${SITE_URL}assets/img/ogp.jpg">
 <meta property="og:image:width" content="1200">
 <meta property="og:image:height" content="630">
+<meta property="og:image:alt" content="${esc(ogAlt)}">
 <meta property="og:locale" content="${lang === 'ja' ? 'ja_JP' : 'en_US'}">
 <meta property="og:locale:alternate" content="${lang === 'ja' ? 'en_US' : 'ja_JP'}">
 <meta name="twitter:card" content="summary_large_image">
 <meta name="twitter:title" content="${esc(title)}">
 <meta name="twitter:description" content="${esc(desc)}">
 <meta name="twitter:image" content="${SITE_URL}assets/img/ogp.jpg">
+<meta name="twitter:image:alt" content="${esc(ogAlt)}">
 <link rel="icon" href="${base}favicon.ico" sizes="32x32">
 <link rel="icon" href="${base}assets/img/icon-192.png" type="image/png" sizes="192x192">
 <link rel="apple-touch-icon" href="${base}assets/img/apple-touch-icon.png">
