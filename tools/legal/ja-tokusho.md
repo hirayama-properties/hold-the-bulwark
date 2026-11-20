@@ -10,4 +10,4 @@ title: 特定商取引法に基づく表記
 | 支払時期・方法 | 購入時に、Google Play（Android版）またはApp Store（iOS版）が定める支払方法によりお支払いいただきます |
 | 商品の引渡時期 | 決済完了後、直ちに本アプリ内に反映されます |
 | キャンセル・返品・返金 | デジタルコンテンツの性質上、購入後のキャンセル・返品・返金には応じられません。返金については、Google PlayまたはAppleの返金ポリシーに従います。 |
-| 動作環境 | Android（Google Playにて配信）／iOS（App Storeにて配信予定） |
+| 動作環境 | Android（Google Playにて配信）／iOS（App Storeにて配信） |

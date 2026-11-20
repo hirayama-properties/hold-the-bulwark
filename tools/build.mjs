@@ -105,7 +105,7 @@ function build(lang) {
 
   const vals = {
     lang, langCls: 'lang-' + lang, menuExpanded: 'false',
-    playUrl: PLAY_URL, ctaUrl: PLAY_URL, ctaText: esc(t.cta),
+    playUrl: PLAY_URL, appStoreUrl: APP_STORE_URL, ctaUrl: PLAY_URL, ctaText: esc(t.cta),
     // legal pages live on this site (see legal.mjs); English has no tokusho page
     privacyUrl: 'privacy/', termsUrl: 'terms/', tokushoUrl: lang === 'ja' ? 'tokusho/' : '../tokusho/',
     zoomLabel: 'SCREENSHOT', contactUrl: CONTACT_URL,
@@ -136,8 +136,9 @@ function build(lang) {
     image: SITE_URL + 'assets/img/ogp.jpg',
     applicationCategory: 'GameApplication',
     genre: ['Merge', 'Tower Defense'],
-    operatingSystem: 'Android',
-    gamePlatform: 'Android',
+    operatingSystem: 'Android, iOS',
+    gamePlatform: ['Android', 'iOS'],
+    downloadUrl: [PLAY_URL, APP_STORE_URL].filter(Boolean),
     inLanguage: ['ja', 'en'],
     installUrl: PLAY_URL,
     offers: { '@type': 'Offer', price: '0', priceCurrency: 'JPY' },

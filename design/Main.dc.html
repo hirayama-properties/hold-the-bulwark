@@ -194,10 +194,10 @@ html{scroll-behavior:smooth}
 <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="6" y="2.5" width="12" height="19" rx="2.5"></rect><path d="M12 7v7M9 11l3 3 3-3M10.5 18.5h3"></path></svg>
 <span class="store-tx"><small>{{t.gpSmall}}</small><strong>Google Play</strong></span>
 </a>
-<span class="store-btn off" aria-label="{{t.soonAria}}">
-<svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="6" y="2.5" width="12" height="19" rx="2.5"></rect><circle cx="12" cy="11" r="3.5"></circle><path d="M12 9.3V11l1.2 1M10.5 18.5h3"></path></svg>
-<span class="store-tx"><small>iPhone / iPad</small><strong>{{t.iosSoon}}</strong></span>
-</span>
+<a class="store-btn" href="{{appStoreUrl}}" target="_blank" rel="noopener" aria-label="{{t.ctaIos}}">
+<svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="6" y="2.5" width="12" height="19" rx="2.5"></rect><path d="M12 7v7M9 11l3 3 3-3M10.5 18.5h3"></path></svg>
+<span class="store-tx"><small>{{t.gpSmall}}</small><strong>App Store</strong></span>
+</a>
 </div>
 <span style="font-size: 13px; color: #A9A398">{{t.heroNote}}</span>
 </div>
@@ -442,10 +442,10 @@ html{scroll-behavior:smooth}
 <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="6" y="2.5" width="12" height="19" rx="2.5"></rect><path d="M12 7v7M9 11l3 3 3-3M10.5 18.5h3"></path></svg>
 <span class="store-tx"><small>{{t.gpSmall}}</small><strong>Google Play</strong></span>
 </a>
-<span class="store-btn off" aria-label="{{t.soonAria}}">
-<svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="6" y="2.5" width="12" height="19" rx="2.5"></rect><circle cx="12" cy="11" r="3.5"></circle><path d="M12 9.3V11l1.2 1M10.5 18.5h3"></path></svg>
-<span class="store-tx"><small>iPhone / iPad</small><strong>{{t.iosSoon}}</strong></span>
-</span>
+<a class="store-btn" href="{{appStoreUrl}}" target="_blank" rel="noopener" aria-label="{{t.ctaIos}}">
+<svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="6" y="2.5" width="12" height="19" rx="2.5"></rect><path d="M12 7v7M9 11l3 3 3-3M10.5 18.5h3"></path></svg>
+<span class="store-tx"><small>{{t.gpSmall}}</small><strong>App Store</strong></span>
+</a>
 </div>
 <p style="margin: 16px 0 0; font-size: 13px; color: #A9A398">{{t.heroNote}}</p>
 </div>
@@ -506,7 +506,7 @@ class Component extends DCLogic {
         heroTitle: '防壁を、守り抜け。',
         kvAlt: 'HOLD THE BULWARK: The Undead Legion — 防壁を守る兵士たちと、迫りくるアンデッド軍団',
         heroSub: '味方をマージして強化。迫りくるアンデッド軍団から、全30ステージ、防衛ラインを守り抜こう。',
-        heroNote: '基本プレイ無料 ・ iOS版は準備中',
+        heroNote: '基本プレイ無料 ・ iPhone / iPad / Android 対応',
         heroPh: 'キービジュアル／プレイ画面', badgePh: '［Google Play 公式バッジ画像］',
         asBadgePh: '［App Store 公式バッジ画像］', soon: '準備中', ctaIos: 'App Storeで入手', iosSoon: 'iOS版は準備中', gpSmall: '無料ダウンロード', soonAria: 'App Store版は準備中です',
         featTitle: '防衛線を支える、4つの柱',
@@ -541,7 +541,7 @@ class Component extends DCLogic {
         cardNote: '※イメージ。実際のリザルトカード画像に差し替え',
         faqTitle: 'よくある質問',
         q1: '無料で遊べますか？', a1: 'はい、基本プレイ無料です。任意の広告視聴でボーナスを受け取れるほか、任意のアプリ内課金があります。',
-        q2: 'iPhoneでも遊べますか？', a2: '現在は Android（Google Play）版を配信しています。iOS版は準備中です。',
+        q2: 'iPhoneでも遊べますか？', a2: 'はい、iPhone・iPadでも遊べます。App Store（iOS版）と Google Play（Android版）で配信しています。',
         q3: 'オフラインでも遊べますか？', a3: 'はい、オフラインでも遊べます。ただし、世界ランキング・広告・アプリ内課金の利用には、インターネット接続が必要です。',
         q4: '課金しないとクリアできませんか？', a4: '特別なアイテムは、敵を倒すと無料で手に入ります。広告の視聴やアプリ内課金は、すべて任意です。',
         q5: 'データの引き継ぎはできますか？', a5: '申し訳ありませんが、現在、データの引き継ぎには対応していません。',
@@ -558,7 +558,7 @@ class Component extends DCLogic {
         heroTitle: 'HOLD THE BULWARK.',
         kvAlt: 'HOLD THE BULWARK: The Undead Legion — defenders of the wall face the undead legion',
         heroSub: 'Merge your allies, hold the line, and crush the undead legion across 30 stages.',
-        heroNote: 'Free to play · iOS coming soon',
+        heroNote: 'Free to play · Available on iPhone, iPad and Android',
         heroPh: 'Key visual / Gameplay', badgePh: '[Official Google Play badge image]',
         asBadgePh: '[Official App Store badge image]', soon: 'Coming soon', ctaIos: 'Download on the App Store', iosSoon: 'iOS coming soon', gpSmall: 'Free on', soonAria: 'App Store version coming soon',
         featTitle: 'Four Pillars of the Bulwark',
@@ -593,7 +593,7 @@ class Component extends DCLogic {
         cardNote: 'Mockup — replace with an actual result card',
         faqTitle: 'FAQ',
         q1: 'Is it free to play?', a1: 'Yes. The game is free to play. You can optionally watch ads for bonuses, and optional in-app purchases are available.',
-        q2: 'Can I play on iPhone?', a2: 'The game is currently available on Android (Google Play). An iOS version is in preparation.',
+        q2: 'Can I play on iPhone?', a2: 'Yes! The game is available on iPhone and iPad via the App Store, and on Android via Google Play.',
         q3: 'Can I play offline?', a3: 'Yes, you can play offline. The global ranking, ads, and in-app purchases require an internet connection.',
         q4: 'Do I need to pay to clear the game?', a4: 'Special items drop for free when you defeat enemies. Watching ads and in-app purchases are entirely optional.',
         q5: 'Can I transfer my save data?', a5: 'Sorry, transferring save data is not currently supported.',
@@ -609,7 +609,7 @@ class Component extends DCLogic {
   renderVals() {
     // ▼ Links in ONE place — swap before launch
     var PLAY_URL = 'https://play.google.com/store/apps/details?id=com.hirayamaproperties.holdthebulwark';
-    var APP_STORE_URL = '';                 // ← iOS公開後にApp StoreのURLを入れるだけで切り替わる
+    var APP_STORE_URL = 'https://apps.apple.com/jp/app/hold-the-bulwark/id6834996538';   // App Store（iOS版）
     var LEGAL = {
       ja: {
         privacy: 'https://holdthebulwark.com/privacy/',
@@ -671,6 +671,7 @@ class Component extends DCLogic {
       playUrl: PLAY_URL,
       ctaLive: ctaLive,
       ctaOff: !ctaLive,
+      appStoreUrl: APP_STORE_URL,
       ctaUrl: isIOS ? APP_STORE_URL : PLAY_URL,
       ctaText: isIOS ? t.ctaIos : t.cta,
       privacyUrl: PRIVACY_URL,

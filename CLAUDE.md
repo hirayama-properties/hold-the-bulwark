@@ -44,12 +44,12 @@ Claude の「Design」キャンバス形式（`.dc.html`）。`tools/build.mjs` 
 
 - トラッキング・クッキーは入れない（アクセス解析を入れるなら事前に相談）。外部埋め込み（フォーム・動画など）はリンクで置く。
 - ダウンロード数・評価・レビューを、実績ができるまで載せない。「No.1」など根拠のない最上級表現は使わない。
-- Google Play / Apple の公式ロゴ・バッジを手で描き起こさない（使うなら公式配布の画像ファイルをそのまま）。App Store のバッジは iOS 版の配信開始まで使わない。
+- Google Play / Apple の公式ロゴ・バッジを手で描き起こさない（使うなら公式配布の画像ファイルをそのまま）。App Store の公式バッジを使う場合は、Apple の配布画像をそのまま使い、並べるときは App Store を先にする。
 - 動きを減らす設定（prefers-reduced-motion）とコントラストを保つ。
 
 ## 今後の予定・残作業
 
-- **iOS版の配信開始時**: `APP_STORE_URL` を入れる（iPhoneのヘッダー等が「App Storeで入手」に切り替わる）。ヒーローと最終CTAの「iOS版は準備中」ボタン（`.store-btn.off`）をApp Storeへのリンクに替える。特商法の動作環境の「配信予定」を外す。
+- iOS版は2026年11月に App Store で配信開始済み（`APP_STORE_URL` 設定済み）。iPhone/iPad で開くと、ヘッダー等のボタンは自動で「App Storeで入手」になる。
 - 英語版の特商法ページはない（英語ページからは日本語版へリンク）。
 
 ## 運営情報
@@ -57,3 +57,4 @@ Claude の「Design」キャンバス形式（`.dc.html`）。`tools/build.mjs` 
 - 運営：Hirayama Properties K.K.（平山プロパティーズ株式会社）
 - お問い合わせ：https://forms.gle/QtNSUzpAxisWaQEp6
 - Google Play：https://play.google.com/store/apps/details?id=com.hirayamaproperties.holdthebulwark
+- App Store：https://apps.apple.com/jp/app/hold-the-bulwark/id6834996538
