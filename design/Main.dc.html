@@ -391,18 +391,7 @@ html{scroll-behavior:smooth}
 </div>
 </div>
 <div class="reveal" style="display: flex; flex-direction: column; align-items: center; gap: 12px">
-<div style="width: 100%; max-width: 360px; border-radius: 20px; padding: 28px; background: #151922; border: 1px solid #FF7A1A; box-shadow: 0 0 50px rgba(255,122,26,0.15)">
-<div style="display: flex; justify-content: space-between; align-items: center">
-<span class="logo" style="font-weight: 900; font-size: 22px; letter-spacing: 0.12em; color: #FF9A4D">RESULT</span>
-<span class="logo" style="font-size: 10px; letter-spacing: 0.2em; color: #A9A398; font-weight: 700">HOLD THE BULWARK</span>
-</div>
-<div style="height: 1px; background: #262B36; margin: 18px 0"></div>
-<div style="display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 16px">
-<div><p style="margin: 0; font-size: 11px; letter-spacing: 0.16em; color: #A9A398">STAGE</p><p class="logo" style="margin: 2px 0 0; font-size: 26px; font-weight: 900">— —</p></div>
-<div><p style="margin: 0; font-size: 11px; letter-spacing: 0.16em; color: #A9A398">KILLS</p><p class="logo" style="margin: 2px 0 0; font-size: 26px; font-weight: 900">— — —</p></div>
-<div style="grid-column: span 2"><p style="margin: 0; font-size: 11px; letter-spacing: 0.16em; color: #A9A398">WORLD RANK</p><p class="logo" style="margin: 2px 0 0; font-size: 26px; font-weight: 900; color: #FF9A4D"># — — —</p></div>
-</div>
-</div>
+<img src="/assets/img/result-card.webp" alt="{{t.cardAlt}}" width="360" height="360" loading="lazy" style="display: block; width: 100%; max-width: 360px; height: auto; aspect-ratio: 1 / 1; border-radius: 16px; box-shadow: 0 0 50px rgba(255,122,26,0.18), 0 20px 50px rgba(0,0,0,0.45)">
 <p style="margin: 0; font-size: 12px; color: #A9A398">{{t.cardNote}}</p>
 </div>
 </div>
@@ -538,7 +527,7 @@ class Component extends DCLogic {
         rankTitle: '世界中のプレイヤーと、撃破数を競おう。',
         rankBody: '世界共通ランキングに、君の撃破数を刻もう。リザルトカードを友だちに共有して、防衛の記録を見せつけよう。',
         rb1: '世界共通ランキング（撃破数）', rb2: 'リザルトカードを、友だちにシェア', rb3: '日本語 ・ English 対応',
-        cardNote: '※イメージ。実際のリザルトカード画像に差し替え',
+        cardNote: 'リザルトカードの例。プレイ後に、友だちへシェアできます。', cardAlt: 'リザルトカード：ステージ、撃破数、ハイスコア、世界ランキングの順位が表示される',
         faqTitle: 'よくある質問',
         q1: '無料で遊べますか？', a1: 'はい、基本プレイ無料です。任意の広告視聴でボーナスを受け取れるほか、任意のアプリ内課金があります。',
         q2: 'iPhoneでも遊べますか？', a2: 'はい、iPhone・iPadでも遊べます。App Store（iOS版）と Google Play（Android版）で配信しています。',
@@ -590,7 +579,7 @@ class Component extends DCLogic {
         rankTitle: 'Compete with Players Worldwide',
         rankBody: 'Post your kill count to the global leaderboard, then share your result card with friends.',
         rb1: 'Global ranking by kill count', rb2: 'Share your result card', rb3: 'Japanese & English',
-        cardNote: 'Mockup — replace with an actual result card',
+        cardNote: 'A sample result card. Share yours with friends after each run.', cardAlt: 'Result card showing the stage, kills, high score, and world ranking',
         faqTitle: 'FAQ',
         q1: 'Is it free to play?', a1: 'Yes. The game is free to play. You can optionally watch ads for bonuses, and optional in-app purchases are available.',
         q2: 'Can I play on iPhone?', a2: 'Yes! The game is available on iPhone and iPad via the App Store, and on Android via Google Play.',
